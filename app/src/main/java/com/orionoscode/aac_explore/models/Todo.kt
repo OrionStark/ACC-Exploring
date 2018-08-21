@@ -5,9 +5,9 @@ import android.arch.persistence.room.PrimaryKey
 
 @Entity(tableName = "Task")
 data class Todo(
-        @PrimaryKey(autoGenerate = true) val id: Long,
-        var tittle: String = "",
-        var subTitle: String = "",
-        var description: String ="",
+        @PrimaryKey(autoGenerate = true) val id: Int = 0,
+        var tittle: String,
+        var subTitle: String,
+        var description: String,
         var done: Int = 0
 )

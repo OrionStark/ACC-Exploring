@@ -8,10 +8,10 @@ import com.orionoscode.aac_explore.models.Todo
 interface TodoDao {
 
     @Query("SELECT * FROM Task")
-    fun getTodo() : LiveData<ArrayList<Todo>>
+    fun getTodo() : LiveData<List<Todo>>
 
     @Query("SELECT * FROM Task WHERE done=1")
-    fun getDoneTodo() : LiveData<ArrayList<Todo>>
+    fun getDoneTodo() : LiveData<List<Todo>>
 
     @Insert
     fun insertAll(vararg todo: Todo)
