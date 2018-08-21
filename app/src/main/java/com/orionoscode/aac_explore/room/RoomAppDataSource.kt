@@ -23,7 +23,6 @@ abstract class RoomAppDataSource : RoomDatabase() {
                     ).build()
                 }
             }
-
             return DB_INSTANCE as RoomAppDataSource
         }
 
